@@ -1,6 +1,4 @@
 import sqlite3
-import time
-import datetime
 conn = sqlite3.connect('timetable.db')
 c = conn.cursor()
 
@@ -22,7 +20,7 @@ while True:
 
     z = input()
     if z != 'add' and z != 'delete' and z != 'show' and z != 'date' and z != 'time':
-        print('\nТакой функции не существует')
+        print('\nТакой функции не существует\n')
     else:
         if z == 'add':
             print('\nВведите название мероприятия:\n')
